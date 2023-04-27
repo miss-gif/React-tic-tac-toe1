@@ -58,7 +58,7 @@ function App() {
       <li key={move}>
         <button
           onClick={() => {
-            jumpTo(step);
+            jumpTo(move);
           }}
         >
           {desc}
