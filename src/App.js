@@ -57,6 +57,7 @@ function App() {
     return (
       <li key={move}>
         <button
+          className="move-button"
           onClick={() => {
             jumpTo(move);
           }}
@@ -74,10 +75,10 @@ function App() {
 
   return (
     <div className="game">
-      <div className="game__board">
+      <div className="game-board">
         <Board squares={current.squares} onClick={(i) => handleClick(i)}></Board>
       </div>
-      <div className="game__info">
+      <div className="game-info">
         <div className="status">{status}</div>
         <ol>{moves}</ol>
       </div>
